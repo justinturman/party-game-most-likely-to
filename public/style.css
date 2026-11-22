@@ -1,0 +1,35 @@
+body { margin: 0; padding: 1rem; font-family: sans-serif; text-align: center;
+       background: #1e1e2f; color: #fff; }
+h1, h2, h3 { margin: 0.5rem 0; }
+button { font-size: 1.1rem; padding: 0.6rem 1.2rem; border: none; border-radius: 8px;
+         background: #8ab4ff; color: #111; font-weight: bold; cursor: pointer; }
+button:disabled { opacity: 0.4; cursor: default; }
+button.sel { background: #ffd54f; }
+button.secondary { background: #c9c9dc; }
+button.target { display: block; width: min(90%, 360px); margin: 6px auto;
+                font-size: 1.3rem; padding: 0.8rem; }
+
+.lead { margin: 0.5rem 0 0; font-size: 1.2rem; opacity: 0.8; }
+.prompt { font-size: clamp(1.6rem, 5vw, 2.8rem); max-width: 800px;
+          margin: 0.3rem auto 0.5rem; color: #ffd54f; }
+.progress { opacity: 0.7; font-size: 0.9rem; }
+.waiting { font-size: 1.1rem; opacity: 0.85; }
+
+.players { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 1rem 0; }
+.player { background: #33334d; border-radius: 10px; padding: 0.6rem 1rem; min-width: 140px; }
+.player p { margin: 0.2rem 0; }
+
+.results { max-width: 640px; margin: 1rem auto; }
+.rrow { display: flex; align-items: center; gap: 10px; margin: 6px 0; }
+.rname { flex: 0 0 8rem; text-align: right; overflow: hidden; text-overflow: ellipsis;
+         white-space: nowrap; }
+.track { flex: 1; height: 1.4rem; background: #33334d; border-radius: 8px; overflow: hidden; }
+.fill { display: block; height: 100%; background: #8ab4ff; border-radius: 8px;
+        transition: width 0.4s; }
+.rrow.win .fill { background: #ffd54f; }
+.rrow.win .rname { font-weight: bold; }
+.rcount { flex: 0 0 2rem; text-align: left; font-weight: bold; }
+
+ul.recap { list-style: none; padding: 0; max-width: 640px; margin: 0.5rem auto;
+           text-align: left; opacity: 0.9; }
+ul.recap li { margin: 4px 0; }
