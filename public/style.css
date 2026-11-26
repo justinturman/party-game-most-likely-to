@@ -33,3 +33,11 @@ button.target { display: block; width: min(90%, 360px); margin: 6px auto;
 ul.recap { list-style: none; padding: 0; max-width: 640px; margin: 0.5rem auto;
            text-align: left; opacity: 0.9; }
 ul.recap li { margin: 4px 0; }
+/* ---- open rooms: people come and go ---- */
+.away { opacity: 0.45; }
+.notice { color: #ffd54f; font-size: 1.1rem; margin: 0.5rem 0; }
+.paused { color: #ffb74d; font-size: 1.1rem; margin: 0.5rem 0; }
+.chip { display: inline-block; background: #33334d; border-radius: 999px; padding: 0.3rem 0.9rem; margin: 3px; }
+.chip.wait { background: #2a2a40; opacity: 0.8; }
+button.target:disabled { opacity: 0.35; }
+.bigcount { font-size: 2.4rem; font-weight: bold; color: #ffd54f; margin: 0.2rem 0; }
